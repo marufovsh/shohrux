@@ -1,0 +1,258 @@
+@import 'fonts.css';
+
+:root{
+   --m-m: 'Montserrat-Medium';
+   --m-r: 'Montserrat-Regular';
+   --n-s: 'NunitoSans-Regular'; 
+   --n-b: 'NunitoSans-Bold';
+}
+
+*{
+    list-style: none;
+    text-decoration: none;
+}
+/* ********************************************************** */
+/* --------------------- header start ----------------------- */
+
+
+
+.header-nav-link{
+    font-family: var(--m-m);
+    font-size: 12px;
+    font-weight: 700;
+    color: #191919;
+    margin: 0 14px;
+    transition: 0,5s;
+}
+
+.header-nav-link:hover{
+    color: #007d2f;
+    text-decoration: none;
+}
+
+section{
+    background: #f6f6f6;
+}
+
+.brooke{
+    width: 100%;
+}
+
+section .spn span{
+    font-family: var(--n-b);
+    font-size: 16px;
+    color: #171717;
+    font-weight: 700;
+}
+
+.c_text{
+    font-size: 16px;
+    color: #787878;
+    font-family: var(--n-s);
+}
+
+.c_title{
+    margin-bottom: 30px;
+    font-family: var(--m-m);
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.spn{
+    margin-top: 60px;
+}
+
+/* ************************************************* */
+/* --------------------section start ----------------- */
+.slider__grin {
+    background: #007d2f;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.carousel-indicators li {
+    width: 6px;
+    height: 6px;
+    border: none;
+    margin-bottom: 6px;
+}
+
+.carousel-indicators {
+    bottom: -62px;
+    width: 25px;
+    margin: auto;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.carousel-control-prev{
+    justify-content: flex-start;
+}
+
+.carousel-control-next{
+    justify-content: flex-end;
+}
+
+.s_icon{
+    color: black;
+    margin: 0 14px;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    opacity: 1;
+    width: 100%;
+    text-transform: uppercase;
+    font-family: var(--m-m);
+    font-size: 12px;
+}
+
+/* ********************************************** */
+/* ---------------------footer--------------------- */
+
+footer{
+    background: #141414;
+    padding: 90px 127px;
+}
+
+footer a{
+   font-size: 14,72px;
+   color: #989898; 
+}
+
+footer p{
+    color: #989898;
+    font-size: 14,72px;
+}
+
+footer h5{
+    color: #989898;
+    font-size: 17,66px;
+    font-family: var(--m-m);
+}
+
+
+/* *************************************************** */
+/* ------------------- media start -------------------- */
+
+
+@media (max-width:1165px){
+    .spn {
+        margin-top: 45px;
+    }
+    .c_title {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:1110px){
+    .spn {
+        margin-top: 30px;
+    }   
+}
+
+@media (max-width:1075px){
+    .c_title {
+        margin-bottom: 10px;
+    }
+    .spn {
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width:991px){
+    .footer-row{
+    justify-content: center;    
+    }
+
+}
+
+@media (max-width:931px){
+    .c_title {
+        font-size: 30px;
+    }
+    .c_text {
+        font-size: 13px;
+    }
+    section .spn span {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:888px){
+    footer{
+        padding: 90px 100px;
+}
+    }
+
+    @media (max-width:794px){
+        .c_title {
+            font-size: 25px;
+        }
+        .c_title {
+            margin-bottom: 8px;
+        }
+    }
+    
+    @media (max-width:771px){
+        .c_text {
+            font-size: 12px;
+        }
+        
+    }
+    
+    @media (max-width:767px){
+        .c_title {
+            margin-bottom: 20px;
+            font-size: 30px;
+        }  
+        .c_text {
+            font-size: 14px;
+        } 
+        .spn {
+            margin-top: 50px;
+        }
+        section .spn span {
+            font-size: 14px;
+        }
+        
+       
+        }
+    
+    
+    @media (max-width:790px){
+        footer{
+            padding: 90px 50px;
+}
+        }
+        
+        @media (max-width:450px){
+            .prv{
+                display: none;
+            }
+        }
+    
+        @media (max-width:420px){
+            footer{
+                padding: 60px 10px;
+            }
+            .c_title {
+                margin-bottom: 20px;
+                font-size: 30px;
+            }
+            .spn {
+                margin-top: 25px;
+            }
+            .c_text {
+                font-size: 13px;
+            }
+            section .spn span {
+                font-size: 13px;
+            }
+        }
+        
+        @media (max-width:320px){
+            footer{
+                padding: 60px 0px;
+            }
+        }

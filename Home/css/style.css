@@ -1,0 +1,154 @@
+@import 'fonts.css';
+
+:root{
+   --m-m: 'Montserrat-Medium';
+   --m-r: 'Montserrat-Regular';
+   --n-s: 'NunitoSans-Regular'; 
+   --n-s-b: 'NunitoSans-Bold';
+}
+
+*{
+    list-style: none;
+    text-decoration: none;
+}
+
+/* ******************************************************* */
+/* ---------------------header start ----------------------- */
+
+.header-nav-link{
+    font-family: var(--m-m);
+    font-size: 12px;
+    font-weight: 700;
+    color: #191919;
+    margin: 0 14px;
+    transition: 0,5s;
+}
+
+.header-nav-link:hover{
+    color: #007d2f;
+    text-decoration: none;
+}
+
+.block-header{
+    background: #007d2f;
+    padding-top: 110px;
+    padding-bottom: 110px; 
+}
+
+.h_title{
+    font-family: var(--m-m);
+    font-size: 30px;
+    color: #171717;
+    margin-bottom: 32px;
+}
+
+.h_text{
+    color: #fefefe;
+    font-family: var(--m-m);
+    font-size: 17px;
+}
+
+
+/* ********************************************* */
+/* ------------ section-img start -------------- */
+
+
+
+.section__img .block_img img{
+    width: 100%;
+}
+
+.section__img .block_img{
+    position: relative;
+}
+
+.section__img .block_img a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #358062a8;
+    font-size: 50px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.section__img .block_img:hover a{
+    opacity: 1;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+}
+
+.s_row{
+    margin: 0;
+}
+
+.s_col{
+    padding: 0;
+}
+
+/* **************************************************** */
+/* ------------------------footer start------------------ */
+
+footer{
+    background: #141414;
+    padding: 90px 127px;
+}
+    
+footer a{
+   font-size: 14,72px;
+   color: #989898; 
+}
+
+footer p{
+    color: #989898;
+    font-size: 14,72px;
+}
+
+footer h5{
+    color: #989898;
+    font-size: 17,66px;
+    font-family: var(--m-m);
+}
+
+
+/* *************************************************** */
+/* ------------------- media start -------------------- */
+
+@media (max-width:991px){
+    .footer-row{
+    justify-content: center;    
+    }
+}
+
+
+@media (max-width:888px){
+    footer{
+        padding: 90px 100px;
+}
+    }
+
+    @media (max-width:790px){
+        footer{
+            padding: 90px 50px;
+}
+        }
+        
+    
+        @media (max-width:420px){
+            footer{
+                padding: 60px 10px;
+            }
+        }
+        
+        @media (max-width:320px){
+            footer{
+                padding: 60px 0px;
+            }
+        }

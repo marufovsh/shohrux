@@ -1,0 +1,154 @@
+@import 'fonts.css';
+
+:root{
+   --m-m: 'Montserrat-Medium';
+   --m-r: 'Montserrat-Regular';
+   --n-s: 'NunitoSans-Regular'; 
+   --n-s-b: 'NunitoSans-Bold';
+}
+
+*{
+    list-style: none;
+    text-decoration: none;
+}
+
+/* ******************************************************* */
+/* ---------------------header start ----------------------- */
+
+
+
+
+.header-nav-link{
+    font-family: var(--m-m);
+    font-size: 12px;
+    font-weight: 700;
+    color: #191919;
+    margin: 0 14px;
+    transition: 0,5s;
+}
+
+.header-nav-link:hover{
+    color: #007d2f;
+    text-decoration: none;
+}
+
+.block-header{
+    background: #f5f5f5;
+    padding-top: 105px;
+}
+
+.text-s{
+    font-size: 16px;
+    font-family: var(--n-s-b);
+    color: #171717;
+    font-weight: 700;
+}
+
+.contact_title{
+    margin-bottom: 40px;
+}
+
+.contact-text{
+    font-family: var(--n-s);
+    font-size: 16px;
+    color: #787878;
+}
+
+.block_info input, textarea {
+    width: 100%;
+    font-size: 15px;
+    color: #787878;
+    padding: 18px 15px;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.block_info button{
+    font-size: 12px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 23px 0;
+    background: #007d2f;
+    width: 100%;
+    border: none;
+    font-family: var(--m-m);
+}
+
+.map{
+    margin-top: 100px;
+    width: 100%;
+}
+
+/* ********************************************** */
+/* ---------------------footer--------------------- */
+
+footer{
+    background: #141414;
+    padding: 90px 127px;
+    margin-top: 100px;
+}
+
+footer a{
+   font-size: 14,72px;
+   color: #989898; 
+}
+
+footer p{
+    color: #989898;
+    font-size: 14,72px;
+}
+
+footer h5{
+    color: #989898;
+    font-size: 17,66px;
+    font-family: var(--m-m);
+}
+
+
+/* *************************************************** */
+/* ------------------- media start -------------------- */
+
+@media (max-width:991px){
+    .footer-row{
+    justify-content: center;    
+    }
+    .block_info button{
+        font-size: 8px;
+    padding: 17px 0;
+}
+}
+
+
+@media (max-width:888px){
+    footer{
+        padding: 90px 100px;
+}
+    }
+
+    @media (max-width:790px){
+        footer{
+            padding: 90px 50px;
+}
+        }
+        
+        @media (max-width:767px){
+            .block_info button{
+                font-size: 12px;
+                padding: 23px 0;
+            }
+            .block-contact{
+                margin-bottom: 50px;
+            }
+        }
+    
+        @media (max-width:420px){
+            footer{
+                padding: 60px 10px;
+            }
+        }
+        
+        @media (max-width:320px){
+            footer{
+                padding: 60px 0px;
+            }
+        }
